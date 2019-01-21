@@ -143,7 +143,7 @@ end
 describe "#using_delete_at" do 
   it "takes in two arguments, an array and an integer and deletes the element at the index of the array that is equal to that integer" do 
     famous_robots = ["the dog from doctor who", "R2D2", "Ultron"]
-    deleted_robot = using_delete_at(famous_robots, 2)
+    deleted_robot = using_delete(famous_robots, "Ultron")
     expect(deleted_robot).to eq("Ultron")
   end
 end
